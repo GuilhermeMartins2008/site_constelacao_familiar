@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <title>Terapia: Constelação Famíliar - Contato</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Terapia,Saúde,Família,Ancestrais">
+        <meta charset="description" content="Sobre a terapia constelação familiar">
+        <meta name="author" content="Arthur Soares,Guilherme Martins">
+        <meta http-equiv="refresh" content="210">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="icon" type="imge/jpeg" href="img/terapia constelacao.jpeg">
+        <section>
+        <form name="form1" action="confirmaenvio.html" method="get" netlify>
+        <script language="javascript" type="text/javascript">
+            function validar() {
+                var nome = form1.nome.value;
+                var email = form1.email.value;
+                var numero = form1.numero.value;
+                var cidade = form1.cidade.value;
+                var data = form1.data.value;
+                    if (data == "") {
+                        alert("preencha o campo com a data");
+                        form1.data.focus();
+                        return false;
+                    }
+                    if (nome == "") {
+                        alert("preencha o campo com seu nome");
+                        form1.nome.focus();
+                        return false;
+                    }
+                    if (email == "") {
+                        alert("preencha o campo com seu email");
+                form1.email.focus();
+                        return false;
+                    }
+                    if (numero ==  "") {
+                        alert("preencha o campo com seu número");
+                        form1.numero.focus();
+                        return false;
+                    }
+                    if (cidade ==  "") {
+                        alert("preencha o campo com o nome da sua cidade");
+                        form1.cidade.focus();
+                        return false;
+                    }
+                }
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="menu-horizontal">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="aplicacoes.html">Aplicação</a></li>
+                    <li><a href="efeitos.html">Efeitos</a></li>
+                    <li><a href="formaçao.html">Formação</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <section id="home">
+                <center><h1>Fale Conosco!</h1></center>
+            </section>
+        <hr>
+        <br>
+        <center><label for="data">Data de nascimento:</label></center>
+        <center><input id="data" name="data" tabindex="3"
+                        type="date" pattern="[0-9]{2}\/[0-9]{2}\/[0-9]{4}$" min="1900-01-01" required />
+                  <br><br>
+                  <center><form name="form1" action="confirmaenvio.html" method="post" netlify>
+                    Nome: <input name="nome" type="text" placeholder="coloque seu nome"><br><br>
+                    Email: <input name="email" type="email" placeholder="coloque seu email"><br><br>
+                    Número: <input name="numero" type="tel" placeholder="coloque seu número"><br><br>
+                    Cidade: <input name="cidade" type="text" placeholder="coloque sua cidade"><br><br>
+                  </center>
+                    Informações adicionais:<br><textarea rows="15" cols="50"></textarea><br>
+                    <input type="submit" onclick="return validar()">
+                    <input type="reset" name="limpar" value="Limpar">
+                    </form>
+         </div>
+        </section>
+        <!-- Adicione mais seções conforme necessário -->
+        </section>
+        <br><br><br>
+        <script src="script.js"></script>
+        <hr>
+        <footer>
+            <div class="rodape">
+                <p>Arthur Soares e Guilherme Martins 2024&copyTodos os direitos reservados. Trabalho acadêmico sem fins lucrativos</p>
+            </div>
+        </footer><br>
+        
+        </center>
+    </body>
+</html>

@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #001f3f;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+.menu-horizontal {
+    background-color: #800080; 
+    padding: 10px 0;
+    position: relative;
+    right: -15%;
+    border-radius: 10px; /* Borda arredondada */
+    overflow: hidden;
+}
+
+.menu-horizontal ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.menu-horizontal li {
+    float: left;
+}
+
+.menu-horizontal li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s; /* Animação de transição */
+}
+
+.menu-horizontal li a:hover {
+    background-color: #993399;
+}
+
+.menu-horizontal li a:active {
+    transform: scale(0.95); /* Animação ao clicar */
+    background-color: #660066; /* Cor roxa mais escura ao clicar */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.box {
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 10px; /* Borda arredondada */
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.ebox {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    margin: 50px;
+    padding: 10px;
+}
+
+.about {
+    background-color: #3d2ba9a8;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
